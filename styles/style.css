@@ -60,6 +60,10 @@ html {
     text-align: center;
 }
 
+#search-bubble:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
 #search-bubble img {
     position: relative;
     top: 8px;
@@ -96,6 +100,11 @@ html {
 
     font-size: 14px;
     color: #5F6368;
+}
+
+.buttons:hover {
+    border: 1px solid #c6c6c6;
+    color: #000000;
 }
 
 #lang-bar {
