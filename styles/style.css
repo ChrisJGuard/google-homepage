@@ -3,10 +3,13 @@ html {
     font-family: arial, sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 #toolbar {
     display: flex;
     justify-content: space-between;
-
     padding: 5px 20px;
 }
 
@@ -15,7 +18,6 @@ html {
     color: #343434;
     opacity: 0.87;
     text-decoration: none;
-
     padding: 8px;
 }
 
@@ -33,7 +35,7 @@ html {
 }
 
 #toolbar-right #apps {
-    border-radius: 0;
+    border-radius: 0%;
 }
 
 #toolbar-right #account {
@@ -42,21 +44,17 @@ html {
 
 #logo {
     display: block;
-
-    margin: 67px auto 0px auto;
+    margin: 10vh auto 0px auto;
     padding: 30px;
 }
 
 #search-bubble {
     height: 44px;
-    width: 584px;
-
+    max-width: 584px;
     position: relative;
-    
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     margin: auto;
-
     text-align: center;
 }
 
@@ -67,37 +65,30 @@ html {
 #search-bubble img {
     position: relative;
     top: 8px;
-
     opacity: 0.3;
 }
 
 #search-field {
     width: 90%;
     height: 30px;
-
     border: none;
     outline: none;
-
     position: relative;
     top: 5px;
-
     font-size: 16px;
 }
 
 #button-form {
     padding: 18px 0px;
-
     text-align: center;
 }
 
 .buttons {
     height: 36px;
-    
     padding: 0 16px;
     border: 1px solid #f2f2f2;
     border-radius: 4px;
     margin: 11px 4px;
-
     font-size: 14px;
     color: #5F6368;
 }
@@ -108,19 +99,45 @@ html {
 }
 
 #lang-bar {
-    height: 41px;
+    height: 40px;
     width: 100%;
-
     border: 1px solid #e4e4e4;
-
-    padding-left: 30px;
-
-    position: fixed;
-    bottom: 0px;
-
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     color: rgba(0, 0, 0, 0.54); 
-
+    padding: 0px 27px;
+    position: absolute;
+    bottom: 0px;
     font-size: 15px;
     line-height: 40px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: rgb(95, 99, 104);
+    position: absolute;
+    bottom: -40px;
+    padding: 0px 27px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.footer-sub a {
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.footer-sub a:hover {
+    text-decoration: underline;
+}
+
+#footer-left a {
+    padding-right: 27px;
+}
+
+#footer-right a {
+    padding-left: 27px;
 }
