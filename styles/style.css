@@ -3,16 +3,49 @@ html {
     font-family: arial, sans-serif;
 }
 
+#toolbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+.toolbar-sub a {
+    font-size: 13px;
+    color: #343434;
+    opacity: 0.87;
+    text-decoration: none;
+
+    margin: 10px;
+}
+
+#toolbar-left, #toolbar-right {
+    display: flex;
+    align-items: center;
+}
+
+#toolbar-right img {
+    margin: 10px;
+}
+
+#toolbar-right #apps {
+    border-radius: 0;
+}
+
+#toolbar-right #account {
+    border-radius: 50%;
+}
+
 #logo {
     display: block;
 
-    margin: auto;
-    padding: 20px;
+    margin: 50px auto 0px auto;
+    padding: 30px;
 }
 
 #search-bubble {
     height: 44px;
-    width: 460px;
+    width: 584px;
     
     border: 1px solid #dfe1e5;
     border-radius: 24px;
